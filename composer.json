@@ -23,11 +23,11 @@
         "phpunit/phpunit": "~5.0"
     },
     "autoload": {
-        "psr-4": { "Tristafrn\\PdfInvoice\\": "src/" }
+        "psr-4": { "Tristanfrn\\PdfInvoice\\": "src/" }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tristafrn\\PdfInvoice\\Tests\\": "tests/"
+            "Tristanfrn\\PdfInvoice\\Tests\\": "tests/"
         }
     },
     "extra": {
