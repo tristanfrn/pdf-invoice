@@ -4,6 +4,7 @@
     "type": "library",
     "license": "GPL-2.0-or-later",
     "keywords": ["invoice", "pdf", "tristanfrn"],
+    "version": "1.5.1",
     "support": {
         "source": "https://github.com/tristanfrn/pdf-invoice"
     },
