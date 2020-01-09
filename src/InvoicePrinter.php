@@ -9,7 +9,7 @@
  *
  */
 
-namespace TristanFrn\PdfInvoice;
+namespace Tristanfrn\PdfInvoice;
 
 use FPDF;
 

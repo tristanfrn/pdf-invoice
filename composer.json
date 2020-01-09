@@ -3,9 +3,9 @@
     "description": "Library to generate PDF invoices",
     "type": "library",
     "license": "GPL-2.0-or-later",
-    "keywords": ["invoice", "pdf", "konekt", "artkonekt"],
+    "keywords": ["invoice", "pdf", "tristanfrn"],
     "support": {
-        "source": "https://github.com/artkonekt/pdf-invoice"
+        "source": "https://github.com/tristanfrn/pdf-invoice"
     },
     "authors": [
         {
@@ -23,11 +23,11 @@
         "phpunit/phpunit": "~5.0"
     },
     "autoload": {
-        "psr-4": { "Konekt\\PdfInvoice\\": "src/" }
+        "psr-4": { "Tristafrn\\PdfInvoice\\": "src/" }
     },
     "autoload-dev": {
         "psr-4": {
-            "Konekt\\PdfInvoice\\Tests\\": "tests/"
+            "Tristafrn\\PdfInvoice\\Tests\\": "tests/"
         }
     },
     "extra": {
