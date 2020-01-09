@@ -1,6 +1,6 @@
 {
     "name": "tristanfrn/pdf-invoice",
-    "description": "Library to generate PDF invoices",
+    "description": "Library to generate PDF invoices - Fork for french format",
     "type": "library",
     "license": "GPL-2.0-or-later",
     "keywords": ["invoice", "pdf", "tristanfrn"],
