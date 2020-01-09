@@ -247,11 +247,7 @@ class InvoicePrinter extends FPDF
         $spaceBetweenCurrencyAndAmount = isset($this->referenceformat[3]) ? (bool) $this->referenceformat[3] : true;
         $space = $spaceBetweenCurrencyAndAmount ? ' ' : '';
 
-        if ('right' == $alignment) {
-            return number_format($price, 2, $decimalPoint, $thousandSeparator) . $space . $this->currency;
-        } else {
-            return $this->currency . $space . number_format($price, 2, $decimalPoint, $thousandSeparator);
-        }
+        return number_format($price, 2, ',', ' ') . ' ' . $this->currency;
     }
 
     public function addItem($item, $description = "", $quantity, $vat, $price, $discount = 0, $total)
@@ -435,7 +431,7 @@ class InvoicePrinter extends FPDF
                 $this->Ln(5);
                 $this->SetTextColor(50, 50, 50);
                 $this->SetFont($this->font, 'B', 10);
-                $this->Cell($width, $lineheight, $this->from[0], 0, 0, 'L');
+                $this->Cell($width, $lineheight, iconv(self::ICONV_CHARSET_INPUT, self::ICONV_CHARSET_OUTPUT_A, $this->from[0]), 0, 0, 'L');
                 $this->Cell(0, $lineheight, iconv(self::ICONV_CHARSET_INPUT, self::ICONV_CHARSET_OUTPUT_A, $this->to[0]), 0, 0, 'L');
                 $this->SetFont($this->font, '', 8);
                 $this->SetTextColor(100, 100, 100);
